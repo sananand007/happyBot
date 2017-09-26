@@ -38,6 +38,9 @@ class main(object):
     def __init__(self):
         super(main, self).__init__()
         self.sentence = input("Enter your greeting and I will respond ! \n")
+        self.greeting_keys = []
+        for word in GREETING_KEYWORDS:
+            self.greeting_keys.append(convert(word))
 
     def manipulate(self):
         nlp = spacy.load('en')
@@ -46,11 +49,7 @@ class main(object):
             print(token)
 
     def greeting(self):
-        greeting_keys = []
-        for word in GREETING_KEYWORDS:
-            greeting_keys.append(convert(word))
-
-        if convert(self.sentence) in greeting_keys:
+        if convert(self.sentence) in self.greeting_keys:
             return print(random.choice(GREETING_RESPONSES))
 
 obj = main()
