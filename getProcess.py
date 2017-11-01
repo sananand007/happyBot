@@ -69,7 +69,7 @@ class parsecorpus(object):
         for word in tokens:
             for item in word:
                 if item not in self.unique_words:              
-                    self.dict[unique_words] = self.v_count
+                    self.dict[item] = self.v_count
                     self.v_count += 1
                 self.unique_words.add(item)
         return len(self.unique_words)
@@ -90,7 +90,7 @@ class parsecorpus(object):
                 if j == 0:
                     X_vec[i][self.dict[w]] = 1
                 else:
-                    y_vec[i][self.dict[w]][j] = 1
+                    y_vec[i][self.dict[w]][j-1] = 1
         return X_vec, y_vec
 
 obj = parsecorpus()
@@ -109,5 +109,4 @@ cleanedLines = obj.clean1(res)
 cleaned_tokens = obj.tokenize(cleanedLines)
 uniqWords = obj.uniquewords(cleaned_tokens)
 ngrams = obj.ngram(cleaned_tokens, 2)
-print("Get the Unique Words",uniqWords)
 print("time taken for filtering with filtersize = {:+f}".format(filtersize), time.clock()-start)
