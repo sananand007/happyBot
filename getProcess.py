@@ -13,11 +13,15 @@ import nltk,re,string
 from nltk import word_tokenize
 import time
 import pickle
+import numpy as np
 
 class parsecorpus(object):
     """docstring for parsecorpus."""
     def __init__(self):
         super(parsecorpus, self).__init__()
+        self.dict = {}
+        self.v_count = 0
+        self.unique_words = set()
 
     def filtercorpus(self, path1, path2, path3, filtersize):
         f1 = open(path1,'r+',encoding="utf-8")
@@ -28,25 +32,22 @@ class parsecorpus(object):
         x = f1.readlines()
 
         sizehere = int(filtersize*len(x))
-        for i in range(0, int(filtersize*len(x))):
+        for i in range(0, sizehere):
             f2.write(x[i])
-
-        #pickle.dump(x[0:sizehere],f3)
-
 
         f1.close()
         f2.close()
         #f3.close()
 
-        return x[0:sizehere]
+        return x[:sizehere]
 
     def clean1(self,lines):
         cleanedLines = [re.sub(r'[^(a-z|A-Z|\s+)]','',line) for line in lines]
         return cleanedLines
 
     def tokenize(self, lines):
-        tokensperline_cleaned = []
-        regex = re.compile('[%s]' % re.escape(string.punctuation))
+        # tokensperline_cleaned = []
+        # regex = re.compile('[%s]' % re.escape(string.punctuation))
         tokenized = [word_tokenize(line) for line in lines]
         # you need the below if you choose to not use clean1
         # for line in tokenized:
@@ -59,18 +60,38 @@ class parsecorpus(object):
         #return tokensperline_cleaned.append
         return tokenized
 
-    def ngram(self, sentencelist, type):
-        temp = [list(zip(*[s[i:] for i in range(type)])) for s in sentencelist]
+    def ngram(self, sentencelist, n):
+        temp = [list(zip(*[s[i:] for i in range(n)])) for s in sentencelist]
         res = [tup for x1 in temp for tup in x1]
         return res
 
     def uniquewords(self, tokens):
-        uniquewords = set()
         for word in tokens:
             for item in word:
-                uniquewords.add(item)
-        return len(uniquewords)
+                if item not in self.unique_words:              
+                    self.dict[unique_words] = self.v_count
+                    self.v_count += 1
+                self.unique_words.add(item)
+        return len(self.unique_words)
 
+    def vectorization(self, X):
+        """
+        input: n-gram string vectors
+        e.g. X = [['the', 'quick', 'fox'], ['quick', 'fox', 'jumped']]
+        output: centerWord-contextWord vector pairs. X_vec, y_vec
+        """
+        N = len(X)
+        M = self.v_count
+        C = len(X[0]) - 1   # number of context words
+        X_vec = np.zeros(shape = (N, M))
+        y_vec = np.zeros(shape = (N, M, C))
+        for i, tup in enumerate(X):
+            for j, w in enumerate(tup):
+                if j == 0:
+                    X_vec[i][self.dict[w]] = 1
+                else:
+                    y_vec[i][self.dict[w]][j] = 1
+        return X_vec, y_vec
 
 obj = parsecorpus()
 
