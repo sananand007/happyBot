@@ -23,7 +23,7 @@ class parsecorpus(object):
         self.v_count = 0
         self.unique_words = set()
 
-    def filtercorpus(self, path1, path2, path3, filtersize):
+    def filtercorpus(self, path1 = './en_US.news.txt', path2 = None, path3 = None, filtersize = 0.05):
         f1 = open(path1,'r+',encoding="utf-8")
         f2 = open(path2,'w+',encoding="utf-8")
         #f1 = open(path1,'r+')
@@ -68,13 +68,13 @@ class parsecorpus(object):
     def uniquewords(self, tokens):
         for word in tokens:
             for item in word:
-                if item not in self.unique_words:              
+                if item not in self.unique_words:
                     self.dict[item] = self.v_count
                     self.v_count += 1
                 self.unique_words.add(item)
         return len(self.unique_words)
 
-    def vectorization(self, X):
+    def vectorize(self, X):
         """
         input: n-gram string vectors
         e.g. X = [['the', 'quick', 'fox'], ['quick', 'fox', 'jumped']]
@@ -93,20 +93,17 @@ class parsecorpus(object):
                     y_vec[i][self.dict[w]][j-1] = 1
         return X_vec, y_vec
 
-obj = parsecorpus()
-
-path1 = "C://Public//Data-Science[JHU-Coursera]//project_nlp//final//en_US//en_US.news.txt"
-path2 = "C://Public//Data-Science[JHU-Coursera]//project_nlp//final//en_US//en_US_new_flt.txt"
-path3 = "C://Public//Data-Science[JHU-Coursera]//project_nlp//final//en_US//en_US_new_flt.pkl"
-#path1= "C://Dropbox//Delete_Me//nlp//en_US.news.txt"
-#path2= "C://Dropbox//Delete_Me//nlp//en_US_new_flt.txt"
-#path3= "C://Dropbox//Delete_Me//nlp//en_US_new_flt.pkl"
-
-start = time.clock()
-filtersize = 0.03 #user input , change to make the filter bigger or smaller for the corpus
-res = obj.filtercorpus(path1, path2, path3, filtersize)
-cleanedLines = obj.clean1(res)
-cleaned_tokens = obj.tokenize(cleanedLines)
-uniqWords = obj.uniquewords(cleaned_tokens)
-ngrams = obj.ngram(cleaned_tokens, 2)
-print("time taken for filtering with filtersize = {:+f}".format(filtersize), time.clock()-start)
+def dataProcessing(parser, corpus_path, filter_size = 0.03, n_gram = 2):
+    """
+    Params:
+        input:
+            Corpus parser object, document path, filter size and number of grams
+        output:
+            One-hot vectors X, y, ready for training neural networks
+    """
+    parser.filtercorpus(corpus_path, filtersize = filter_size)
+    cleanedLines = parser.clean1(res)
+    cleaned_tokens = parser.tokenize(cleanedLines)
+    print ('Volcabulary size is %d' % parser.uniquewords(cleaned_tokens))
+    ngrams_vec = parser.ngram(cleaned_tokens, n)
+    return parser.vectorize(ngram_vecs)
