@@ -38,7 +38,7 @@ class parsecorpus(object):
         f1.close()
         f2.close()
         #f3.close()
-
+        self.doc_size = sizehere
         return x[:sizehere]
 
     def clean1(self,lines):
@@ -77,23 +77,19 @@ class parsecorpus(object):
     def vectorize(self, X):
         """
         input: n-gram string vectors
-        e.g. X = [['the', 'quick', 'fox'], ['quick', 'fox', 'jumped']]
-        output: centerWord-contextWord vector pairs. X_vec, y_vec
+        e.g. X = [('the', 'quick', 'fox'), ('quick', 'fox', 'jumped')]
+        output: return an iterator
         """
-        N = len(X)
         M = self.v_count
-        C = len(X[0]) - 1   # number of context words
-        X_vec = np.zeros(shape = (N, M))
-        y_vec = np.zeros(shape = (N, M, C))
+        C = len(X[0])   # number of context words + 1
         for i, tup in enumerate(X):
+            vec = np.zeros(shape = (M, C))
             for j, w in enumerate(tup):
-                if j == 0:
-                    X_vec[i][self.dict[w]] = 1
-                else:
-                    y_vec[i][self.dict[w]][j-1] = 1
-        return X_vec, y_vec
+                vec[self.dict[w]][j] = 1
+            yield vec[:, 0], vec[:, 1:]
 
-def dataProcessing(parser, corpus_path, filter_size = 0.03, n_gram = 2):
+
+def dataProcessing(parser, corpus_path, filtered_path, filter_size = 0.03, n_gram = 2):
     """
     Params:
         input:
@@ -101,9 +97,9 @@ def dataProcessing(parser, corpus_path, filter_size = 0.03, n_gram = 2):
         output:
             One-hot vectors X, y, ready for training neural networks
     """
-    parser.filtercorpus(corpus_path, filtersize = filter_size)
+    res = parser.filtercorpus(corpus_path, filtered_path, filtersize = filter_size)
     cleanedLines = parser.clean1(res)
     cleaned_tokens = parser.tokenize(cleanedLines)
     print ('Volcabulary size is %d' % parser.uniquewords(cleaned_tokens))
-    ngrams_vec = parser.ngram(cleaned_tokens, n)
+    ngram_vecs = parser.ngram(cleaned_tokens, n_gram)
     return parser.vectorize(ngram_vecs)
