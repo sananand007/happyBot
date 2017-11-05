@@ -9,6 +9,17 @@
   + Our Goal would be to make a highly interactive GUI based BOT that will interact with users and will learn from interactions and from the knowledge it gathers from the web/google/twitter/wikipedia etc .
   + As our processing needs increase we will also think of making the project more scalable
 
+### APIs Used
+  + getProcess.py
+    - These has the class parsecorpus has functions to process the corpus data provided as the input
+    - clean1() - cleans the lines completely with only letters
+    - tokenize() - tokenize the lines
+    - ngram() - convert into n-grams
+    - uniquewords() - gets the count and create a dictionary to get the positinons for creating the one hot vectors
+    - vectorize() - gets the vectors for input and output , this is a generator function
+  + Skip-gram Model using jupyter Notebooks
+    - 
+
 ### Tools
   + python, Jupyter Notebooks
 

@@ -5,6 +5,7 @@ Getting a shorter Python Text file
 - https://stackoverflow.com/questions/33726361/counting-the-number-of-unique-words-in-a-list
 - https://stackoverflow.com/questions/9394803/python-combine-two-for-loops
 - http://locallyoptimal.com/blog/2013/01/20/elegant-n-gram-generation-in-python/
+- clean1 : Currently only captures numbers
 - [sA -10/24/2017]    Added Pickle functionality , Currently using the en_US.news.txt and filtering to 5% of the data only
 - [sA -10/27/2017]    Extract Bigrams/n-grams as a list of tuples
 '''
@@ -14,6 +15,7 @@ from nltk import word_tokenize
 import time
 import pickle
 import numpy as np
+import sys
 
 class parsecorpus(object):
     """docstring for parsecorpus."""
@@ -24,11 +26,16 @@ class parsecorpus(object):
         self.unique_words = set()
 
     def filtercorpus(self, path1 = './en_US.news.txt', path2 = None, path3 = None, filtersize = 0.05):
-        f1 = open(path1,'r+',encoding="utf-8")
-        f2 = open(path2,'w+',encoding="utf-8")
-        #f1 = open(path1,'r+')
-        #f2 = open(path2,'w+')
-        #f3 = open(path3,'wb')
+        askver = sys.version
+        v = askver.split(" ")[0].split('.')
+        if v[0]+v[1]=='27':
+            f1 = open(path1,'r+')
+            f2 = open(path2,'w+')
+            #f3 = open(path3,'wb')
+        else:
+            f1 = open(path1,'r+',encoding="utf-8")
+            f2 = open(path2,'w+',encoding="utf-8")
+
         x = f1.readlines()
 
         sizehere = int(filtersize*len(x))
