@@ -5,9 +5,9 @@ Getting a shorter Python Text file
 - https://stackoverflow.com/questions/33726361/counting-the-number-of-unique-words-in-a-list
 - https://stackoverflow.com/questions/9394803/python-combine-two-for-loops
 - http://locallyoptimal.com/blog/2013/01/20/elegant-n-gram-generation-in-python/
-- clean1 : Currently only captures numbers
 - [sA -10/24/2017]    Added Pickle functionality , Currently using the en_US.news.txt and filtering to 5% of the data only
 - [sA -10/27/2017]    Extract Bigrams/n-grams as a list of tuples
+- [sA -11/6/2017]     Cleaned up the Post Processing
 '''
 import os
 import nltk,re,string
@@ -24,6 +24,7 @@ class parsecorpus(object):
         self.dict = {}
         self.v_count = 0
         self.unique_words = set()
+        self.words = []
 
     def filtercorpus(self, path1 = './en_US.news.txt', path2 = None, path3 = None, filtersize = 0.05):
         askver = sys.version
@@ -50,21 +51,14 @@ class parsecorpus(object):
 
     def clean1(self,lines):
         cleanedLines = [re.sub(r'[^(a-z|A-Z|\s+)]','',line) for line in lines]
-        return cleanedLines
+        tokens=[]
+        for line in cleanedLines:
+            temp = [x.strip() for x in line.split(" ") if len(x.strip())>=1 and x!="" and not re.match(r'^[b-h,j-z]$', x.strip(),re.I)]
+            tokens.append(temp)
+        return tokens
 
     def tokenize(self, lines):
-        # tokensperline_cleaned = []
-        # regex = re.compile('[%s]' % re.escape(string.punctuation))
         tokenized = [word_tokenize(line) for line in lines]
-        # you need the below if you choose to not use clean1
-        # for line in tokenized:
-        #     newline = []
-        #     for token in line:
-        #         new_token = regex.sub(u'', token)
-        #         if not new_token == u'':
-        #             newline.append(new_token)
-        #     tokensperline_cleaned.append(newline)
-        #return tokensperline_cleaned.append
         return tokenized
 
     def ngram(self, sentencelist, n):
@@ -77,6 +71,7 @@ class parsecorpus(object):
             for item in word:
                 if item not in self.unique_words:
                     self.dict[item] = self.v_count
+                    self.words.append(item)
                     self.v_count += 1
                 self.unique_words.add(item)
         return len(self.unique_words)
@@ -105,8 +100,7 @@ def dataProcessing(parser, corpus_path, filtered_path, filter_size = 0.03, n_gra
             One-hot vectors X, y, ready for training neural networks
     """
     res = parser.filtercorpus(corpus_path, filtered_path, filtersize = filter_size)
-    cleanedLines = parser.clean1(res)
-    cleaned_tokens = parser.tokenize(cleanedLines)
+    cleaned_tokens = parser.clean1(res)
     print ('Volcabulary size is %d' % parser.uniquewords(cleaned_tokens))
     ngram_vecs = parser.ngram(cleaned_tokens, n_gram)
     return parser.vectorize(ngram_vecs)
