@@ -1,0 +1,228 @@
+Initialized
+Average loss at step  0 :  295.002990723
+Nearest to 30: 9000, throwback, disconnect, sippy, opposed, changeover, quorum, garlic,
+Nearest to police: northside, mcewen, daydreams, photographing, nasser, njtv, matches, hostages,
+Nearest to see: joking, carlstadt, 1892, thing, vogt, panama, ecstatic, convention,
+Nearest to years: unseen, welding, enigma, restaurants, amount, torso, soggy, altamonte,
+Nearest to would: 10th, neverdon, donors, unjustified, paprika, fountains, mays, zeroed,
+Nearest to week: willingly, arterial, psychoactive, mabel, freeway, spinoff, mann, chambers,
+Nearest to high: speck, imitated, anonymous, twig, pham, bunks, kostow, moorish,
+Nearest to money: peacefully, limped, maxima, correlated, vibrato, 71, bathrooms, humphries,
+Nearest to since: eden, wellpoint, walters, pitch, hijinks, lends, 74th, standup,
+Nearest to p: mraz, streamlined, refocused, gorgeous, sermons, brookgate, toying, vedra,
+Nearest to night: connection, shelby, undefeated, rtd, fcs, windward, webcast, moroun,
+Nearest to family: statoil, believes, arabian, kenersys, improv, muench, prior, springwater,
+Nearest to could: gopro, moog, glimpses, maclachlan, salivary, runaways, talkative, suspended,
+Nearest to think: travolta, 1995, leed, desormeaux, continuity, dishwasher, tabbed, ballplayer,
+Nearest to 5: jpl, schwaab, councilman, prior, projections, teak, tabs, isiah,
+Nearest to best: numbers, cone, chef, talkers, resold, rejoins, geoeye, lingered,
+Average loss at step  2000 :  129.457232565
+Average loss at step  4000 :  58.6746146331
+Average loss at step  6000 :  36.2807541072
+Average loss at step  8000 :  25.2236332228
+Average loss at step  10000 :  18.438164418
+Nearest to 30: opposed, invest, g, 10, 540, veteran, throwback, garlic,
+Nearest to police: selling, matches, route, local, canby, dns, academia, vermette,
+Nearest to see: thing, convention, joking, undergraduate, declined, ayala, ecstatic, feeney,
+Nearest to years: year, snyder, stars, restaurants, unseen, amount, torso, rated,
+Nearest to would: blocks, 10th, utah, donors, mays, tehran, canyon, tournament,
+Nearest to week: team, mann, predators, werdesheim, overnight, chambers, c, willingly,
+Nearest to high: anonymous, hopler, wheat, 22, whole, stuff, singapore, accident,
+Nearest to money: bathrooms, peacefully, hoffman, cape, converted, theme, curriculum, distinctive,
+Nearest to since: pitch, eden, beverages, walters, barrel, tomorrow, dns, marina,
+Nearest to p: possibly, petals, sermons, dns, broader, almost, airport, determine,
+Nearest to night: shelby, connection, returning, planes, texts, clot, webcast, weak,
+Nearest to family: prior, ethiopia, believes, donors, slay, expense, lawmaker, acquaintances,
+Nearest to could: hits, tennis, glimpses, along, funeral, album, use, present,
+Nearest to think: 1995, dns, travolta, cheers, chaired, teased, rebuild, bankruptcy,
+Nearest to 5: prior, councilman, projections, poster, obesity, control, affect, fusion,
+Nearest to best: numbers, cone, chef, dates, violence, encourage, awlaki, delgado,
+Average loss at step  12000 :  14.6813223956
+Average loss at step  14000 :  11.9230755336
+Average loss at step  16000 :  10.5163288443
+Average loss at step  18000 :  9.27122057271
+Average loss at step  20000 :  8.35316941452
+Nearest to 30: 10, opposed, g, 540, thud, invest, 1, 5,
+Nearest to police: local, selling, said, academia, levin, route, firmly, kirksville,
+Nearest to see: thing, joking, ecstatic, convention, ayala, diploma, undergraduate, albright,
+Nearest to years: year, months, snyder, restaurants, stars, tenorio, rated, paths,
+Nearest to would: utah, vacations, tehran, blocks, mays, tournament, 10th, affiliation,
+Nearest to week: arterial, mann, team, predators, overnight, chambers, longo, willingly,
+Nearest to high: maiden, anonymous, hopler, whole, two, eased, wheat, ashley,
+Nearest to money: peacefully, limped, bathrooms, hoffman, converted, cape, oppose, distinctive,
+Nearest to since: pitch, eden, beverages, walters, wellpoint, marina, tomorrow, applicants,
+Nearest to p: sermons, petals, interns, possibly, warrants, textbook, pecorino, bulk,
+Nearest to night: shelby, connection, considerations, webcast, clot, planes, rotary, returning,
+Nearest to family: ethiopia, believes, kai, prior, acquaintances, slay, lawmaker, donors,
+Nearest to could: along, appropriate, use, glimpses, album, jointly, hits, ritter,
+Nearest to think: 1995, teased, dns, cheers, chaired, healing, frustrated, deadly,
+Nearest to 5: 1, 2, projections, affect, 4, poster, darcy, prior,
+Nearest to best: cone, lingered, chef, numbers, dates, hubble, delgado, encourage,
+Average loss at step  22000 :  7.69797740245
+Average loss at step  24000 :  7.0366038022
+Average loss at step  26000 :  6.66344524217
+Average loss at step  28000 :  6.50324947333
+Average loss at step  30000 :  6.18933931279
+Nearest to 30: 10, 20, 1, g, 5, thud, 2, 540,
+Nearest to police: local, pyne, selling, also, firmly, academia, hostages, levin,
+Nearest to see: thing, joking, ecstatic, ayala, albright, diploma, something, well,
+Nearest to years: months, year, days, snyder, stars, paths, tenorio, minutes,
+Nearest to would: could, want, going, utah, blocks, need, vacations, mays,
+Nearest to week: arterial, team, mann, predators, year, overnight, inconvenient, longo,
+Nearest to high: maiden, unforgivable, anonymous, pham, eased, yrs, purposely, video,
+Nearest to money: peacefully, limped, hoffman, bathrooms, oppose, converted, distinctive, cider,
+Nearest to since: wellpoint, eden, pitch, walters, beverages, marina, modesto, tomorrow,
+Nearest to p: sermons, interns, petals, bunton, textbook, warrants, bulk, pecorino,
+Nearest to night: shelby, considerations, webcast, clot, rotary, planes, phenomenal, amend,
+Nearest to family: believes, acquaintances, improv, lawmaker, kai, slay, donors, ethiopia,
+Nearest to could: would, going, use, fiddle, along, appropriate, album, gopro,
+Nearest to think: 1995, dns, know, teased, chaired, healing, cheers, one,
+Nearest to 5: 1, 2, 4, 3, 10, 8, 7, 30,
+Nearest to best: cone, lingered, dates, chef, hubble, encourage, thaddeus, delgado,
+Average loss at step  32000 :  6.01510977125
+Average loss at step  34000 :  5.92533832932
+Average loss at step  36000 :  5.75048150063
+Average loss at step  38000 :  5.64107196903
+Average loss at step  40000 :  5.5585288223
+Nearest to 30: 10, 20, 1, 5, 2, g, 540, 8,
+Nearest to police: local, hostages, pyne, also, academia, uber, selling, kreis,
+Nearest to see: thing, something, ayala, joking, ecstatic, diploma, albright, undergraduate,
+Nearest to years: months, year, days, minutes, snyder, schmich, paths, stars,
+Nearest to would: could, going, want, need, might, frommer, utah, must,
+Nearest to week: year, team, mann, arterial, season, predators, inconvenient, overnight,
+Nearest to high: pham, maiden, unforgivable, anonymous, video, purposely, ashley, airspace,
+Nearest to money: limped, peacefully, hoffman, bathrooms, oppose, cider, davita, distinctive,
+Nearest to since: wellpoint, pitch, eden, walters, beverages, marina, tomorrow, modesto,
+Nearest to p: sermons, bunton, textbook, interns, warrants, petals, 7, bulk,
+Nearest to night: shelby, webcast, considerations, morning, clot, rotary, planes, afternoon,
+Nearest to family: kenersys, lawmaker, improv, acquaintances, believes, kai, donors, slay,
+Nearest to could: would, going, fiddle, use, along, appropriate, might, album,
+Nearest to think: know, one, dns, 1995, teased, wrong, chaired, maddon,
+Nearest to 5: 1, 2, 4, 3, 8, 10, 6, 7,
+Nearest to best: cone, one, chef, lingered, thaddeus, hubble, ky, delgado,
+Average loss at step  42000 :  5.57707832003
+Average loss at step  44000 :  5.4652930975
+Average loss at step  46000 :  5.3855130167
+Average loss at step  48000 :  5.32974196219
+Average loss at step  50000 :  5.3369175303
+Nearest to 30: 10, 5, 20, 2, 1, 8, 45, g,
+Nearest to police: also, local, hostages, pyne, kreis, scatter, uber, airwaves,
+Nearest to see: thing, something, joking, ayala, know, well, like, even,
+Nearest to years: months, year, days, minutes, schmich, leisurely, visibility, snyder,
+Nearest to would: could, going, want, might, need, must, frommer, utah,
+Nearest to week: year, season, mann, arterial, team, overnight, inconvenient, predators,
+Nearest to high: pham, unforgivable, maiden, anonymous, video, 22, purposely, length,
+Nearest to money: limped, peacefully, hoffman, oppose, bathrooms, cider, davita, destroying,
+Nearest to since: wellpoint, pitch, walters, eden, beverages, 2010, tomorrow, requisite,
+Nearest to p: sermons, mmm, 7, textbook, warrants, petals, interns, bunton,
+Nearest to night: shelby, morning, afternoon, webcast, considerations, clot, planes, rotary,
+Nearest to family: kenersys, improv, lawmaker, acquaintances, believes, pending, kai, donors,
+Nearest to could: would, going, may, use, might, fiddle, appropriate, outcry,
+Nearest to think: know, one, really, dns, wrong, going, continuity, 1995,
+Nearest to 5: 1, 2, 4, 3, 8, 6, 10, 7,
+Nearest to best: one, cone, another, chef, frame, thaddeus, encourage, lingered,
+Average loss at step  52000 :  5.25083386707
+Average loss at step  54000 :  5.23618451571
+Average loss at step  56000 :  5.168796417
+Average loss at step  58000 :  5.13828244019
+Average loss at step  60000 :  5.13262427473
+Nearest to 30: 10, 5, 2, 20, 1, 8, 15, 45,
+Nearest to police: also, officials, hostages, local, kreis, pyne, slab, uber,
+Nearest to see: know, something, ayala, really, like, joking, thing, well,
+Nearest to years: months, year, days, minutes, schmich, times, visibility, leisurely,
+Nearest to would: could, going, want, might, must, need, may, frommer,
+Nearest to week: year, season, mann, team, arterial, overnight, inconvenient, predators,
+Nearest to high: pham, unforgivable, maiden, anonymous, theatricals, prado, purposely, length,
+Nearest to money: limped, peacefully, hoffman, oppose, cider, bathrooms, dictatorial, destroying,
+Nearest to since: wellpoint, pitch, 2010, walters, eden, 2008, beverages, tomorrow,
+Nearest to p: 7, sermons, mmm, warrants, interns, textbook, 5, bunton,
+Nearest to night: shelby, morning, afternoon, webcast, clot, thursday, considerations, bachelor,
+Nearest to family: kenersys, lawmaker, acquaintances, improv, pending, believes, donors, breasts,
+Nearest to could: would, going, might, may, fiddle, use, want, outcry,
+Nearest to think: know, really, dns, one, going, wrong, like, play,
+Nearest to 5: 2, 1, 3, 4, 8, 6, 7, 10,
+Nearest to best: one, cone, another, chef, thaddeus, frame, hubble, rallying,
+Average loss at step  62000 :  5.10514685345
+Average loss at step  64000 :  5.07628589606
+Average loss at step  66000 :  5.05654228318
+Average loss at step  68000 :  5.04865486145
+Average loss at step  70000 :  5.02788635993
+Nearest to 30: 10, 5, 2, 20, 1, 15, 45, 8,
+Nearest to police: officials, hostages, also, slab, scatter, monday, airwaves, pediatricians,
+Nearest to see: know, something, become, really, ayala, find, go, aspects,
+Nearest to years: months, days, year, minutes, weeks, schmich, leisurely, times,
+Nearest to would: could, going, want, might, must, may, able, need,
+Nearest to week: year, season, mann, month, day, arterial, overnight, predators,
+Nearest to high: pham, unforgivable, maiden, anonymous, theatricals, elementary, traditionalist, prado,
+Nearest to money: limped, hoffman, oppose, peacefully, correlated, dictatorial, cider, bathrooms,
+Nearest to since: wellpoint, 2010, pitch, late, walters, 2008, eden, last,
+Nearest to p: 7, sermons, mmm, warrants, interns, textbook, 3, 5,
+Nearest to night: shelby, morning, afternoon, webcast, thursday, amend, clot, considerations,
+Nearest to family: lawmaker, kenersys, pending, acquaintances, improv, donors, breasts, revenge,
+Nearest to could: would, going, might, may, want, fiddle, need, able,
+Nearest to think: know, really, going, dns, wrong, like, one, play,
+Nearest to 5: 2, 1, 3, 4, 8, 6, 7, 10,
+Nearest to best: one, another, cone, frame, chef, thaddeus, lingered, hubble,
+Average loss at step  72000 :  5.02513651204
+Average loss at step  74000 :  4.98687858748
+Average loss at step  76000 :  4.98287268972
+Average loss at step  78000 :  4.97307453179
+Average loss at step  80000 :  4.96018181086
+Nearest to 30: 10, 5, 2, 20, 15, 1, 8, 45,
+Nearest to police: officials, hostages, scatter, also, slab, monday, examines, pediatricians,
+Nearest to see: know, become, something, really, find, go, ayala, think,
+Nearest to years: months, days, year, minutes, weeks, schmich, leisurely, times,
+Nearest to would: could, going, want, might, must, need, may, expected,
+Nearest to week: year, season, month, day, mann, overnight, arterial, inconvenient,
+Nearest to high: pham, unforgivable, elementary, maiden, anonymous, theatricals, traditionalist, receipt,
+Nearest to money: limped, hoffman, oppose, correlated, dictatorial, destroying, bathrooms, peacefully,
+Nearest to since: 2010, wellpoint, pitch, late, 2008, 2009, walters, 2006,
+Nearest to p: 7, sermons, 8, 5, mmm, warrants, bulk, bunton,
+Nearest to night: shelby, morning, afternoon, webcast, thursday, amend, game, digging,
+Nearest to family: lawmaker, pending, acquaintances, kenersys, improv, donors, pederson, breasts,
+Nearest to could: would, going, might, may, want, need, fiddle, able,
+Nearest to think: know, really, going, dns, wrong, get, see, believe,
+Nearest to 5: 2, 1, 3, 4, 6, 8, 7, 10,
+Nearest to best: one, another, cone, chef, thaddeus, frame, rallying, lingered,
+Average loss at step  82000 :  4.96901398373
+Average loss at step  84000 :  4.95270714438
+Average loss at step  86000 :  4.93698041022
+Average loss at step  88000 :  4.91153913713
+Average loss at step  90000 :  4.91100129175
+Nearest to 30: 10, 5, 15, 20, 2, 1, 8, 45,
+Nearest to police: officials, hostages, slab, scatter, also, monday, airwaves, pediatricians,
+Nearest to see: know, become, something, find, really, think, go, make,
+Nearest to years: months, days, year, minutes, weeks, schmich, leisurely, times,
+Nearest to would: could, going, might, want, must, may, need, expected,
+Nearest to week: year, season, month, day, mann, overnight, inconvenient, arterial,
+Nearest to high: pham, elementary, unforgivable, maiden, anonymous, theatricals, traditionalist, receipt,
+Nearest to money: limped, correlated, oppose, hoffman, taxes, dictatorial, bathrooms, destroying,
+Nearest to since: 2010, wellpoint, 2009, late, pitch, december, 2008, 2006,
+Nearest to p: 7, 5, 8, sermons, 4, 6, bulk, mmm,
+Nearest to night: morning, shelby, afternoon, thursday, webcast, game, week, digging,
+Nearest to family: lawmaker, pending, acquaintances, kenersys, improv, gotcha, scrutinized, revenge,
+Nearest to could: would, going, might, want, may, need, able, fiddle,
+Nearest to think: know, really, going, get, dns, wrong, believe, seen,
+Nearest to 5: 2, 4, 1, 3, 6, 8, 7, 10,
+Nearest to best: another, one, cone, chef, thaddeus, rallying, curly, maddon,
+Average loss at step  92000 :  4.90718240952
+Average loss at step  94000 :  4.90464932871
+Average loss at step  96000 :  4.89096508217
+Average loss at step  98000 :  4.88342556286
+Average loss at step  100000 :  4.88656920612
+Nearest to 30: 10, 5, 15, 20, 8, 2, 1, 45,
+Nearest to police: officials, hostages, slab, scatter, monday, fitted, pediatricians, examines,
+Nearest to see: know, something, really, think, become, find, go, still,
+Nearest to years: months, days, year, minutes, weeks, schmich, leisurely, times,
+Nearest to would: could, going, might, must, want, may, expected, need,
+Nearest to week: year, month, season, day, mann, weekend, overnight, time,
+Nearest to high: pham, elementary, unforgivable, maiden, low, anonymous, theatricals, shortness,
+Nearest to money: limped, oppose, correlated, dictatorial, taxes, davita, bathrooms, hoffman,
+Nearest to since: 2010, wellpoint, 2009, late, 2006, december, 2008, pitch,
+Nearest to p: 7, 8, 5, 6, 4, sermons, mmm, 11,
+Nearest to night: morning, afternoon, shelby, thursday, game, week, evening, webcast,
+Nearest to family: lawmaker, acquaintances, pending, blogosphere, breasts, scrutinized, gotcha, improv,
+Nearest to could: would, going, might, want, may, need, able, likely,
+Nearest to think: know, really, going, get, see, like, believe, dns,
+Nearest to 5: 2, 4, 3, 6, 1, 8, 7, 9,
+Nearest to best: another, one, cone, chef, good, well, rallying, thaddeus,
